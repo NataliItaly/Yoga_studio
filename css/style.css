@@ -82,7 +82,6 @@ button {
   align-items: center;
   height: 100%;
   padding: 0 10px;
-  border: 1px solid red;
 }
 
 .header {
@@ -138,6 +137,9 @@ button {
 }
 
 .burger-menu {
+  position: absolute;
+  top: 36px;
+  right: 10px;
   width: 50px;
   height: 50px;
   background-color: blue;
@@ -289,16 +291,6 @@ section {
   padding-bottom: 100px;
   background-size: contain;
 }
-
-/* .direction .container {
-  padding-top: 100px;
-  background-image: url("../img/direction/direction-flower-big.svg"),
-    url("../img/direction/direction-flower1.svg"),
-    url("../img/direction/direction-flower2.svg");
-  background-repeat: no-repeat;
-  background-position: center, top right, bottom right;
-  background-size: 100%, 30%, 30%;
-} */
 
 .direction-list {
   width: 910px;
@@ -540,7 +532,7 @@ section {
   position: absolute;
   top: -30px;
   left: 0;
-  width: 1100px;
+  width: 100%;
   height: 1350px;
   background-image: url("../img/our-team/our-team-bg.png");
   background-repeat: no-repeat;
@@ -736,6 +728,7 @@ section {
 
 .subscribe-text-column {
   width: 430px;
+  height: 333px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -791,8 +784,8 @@ section {
 }
 
 .footer .container {
-  padding: 40px 0 10px;
-  width: 915px;
+  padding: 40px 10px 10px;
+  max-width: 915px;
   align-items: flex-start;
 }
 

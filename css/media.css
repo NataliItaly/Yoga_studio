@@ -1,4 +1,10 @@
 @media (max-width: 1140px) {
+  .header .container {
+    height: 120px;
+    flex-direction: column;
+    padding-top: 36px;
+    align-items: flex-start;
+  }
   .menu {
     display: none;
   }
@@ -55,11 +61,17 @@
   .subscribe {
     height: fit-content;
   }
+  .subscribe .section-title {
+    text-align: center;
+  }
   .subscribe-wrapper {
     height: fit-content;
   }
   .subscribe-button {
     margin-top: 40px;
+  }
+  .subscribe-social {
+    margin: 0 auto;
   }
 }
 
@@ -108,6 +120,7 @@
   .direction-list {
     width: 350px;
     height: 1400px;
+    justify-content: space-between;
   }
 }
 
@@ -125,30 +138,34 @@
   .slider-preview-wrapper {
     display: none;
   }
+  .our-team .describe-text {
+    position: static;
+    margin-top: 20px;
+  }
+  .subscribe-wrapper {
+    width: 100%;
+  }
+  .subscribe-text-column {
+    width: 95%;
+  }
+  .contacts-column {
+    width: 95%;
+  }
+  .feedback-list {
+    width: 95%;
+  }
+  .feedback-item {
+    width: 100%;
+    padding: 30px;
+    height: fit-content;
+    gap: 20px;
+  }
 }
 
 @media (max-width: 440px) {
   .start-screen-content {
-    padding: 90px 10px 0;
+    padding: 90px 0 0;
   }
-}
-
-@media (max-width: 640px) {
-  /* .subtitle {
-    font-size: 120px;
-  } */
-}
-
-@media (max-width: 485px) {
-  /*  .subtitle {
-    font-size: 100px;
-  } */
-}
-
-@media (max-width: 405px) {
-  /* .subtitle {
-    font-size: 82px;
-  } */
 }
 
 @media (max-width: 420px) {
@@ -158,13 +175,62 @@
     justify-content: space-between;
     align-items: center;
   }
+  .direction-item-active {
+    width: 250px;
+    height: 300px;
+  }
+  .direction-item-active .direction-img {
+    width: 100%;
+    height: 150px;
+  }
+  .membership-term-list {
+    width: 280px;
+  }
+  .type-item.big {
+    width: 265px;
+    height: 287px;
+    padding: 58px 20px 25px;
+  }
+  .type-item.big .content-title {
+    font-size: 20px;
+  }
+  .type-item.big .price-text {
+    font-size: 30px;
+  }
+  .slider-text-column {
+    padding: 30px 15px;
+  }
+  .subscribe {
+    padding-bottom: 40px;
+  }
   .subscribe-link {
     margin: 30px auto 40px;
+  }
+  .contacts-column p:nth-of-type(2n) {
+    width: 190px;
+  }
+  .contacts-column {
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: nowrap;
+    height: fit-content;
+    justify-content: center;
+  }
+  .contacts-column p {
+    margin: 0 auto;
+  }
+  .subscribe-social {
+    margin-top: 30px;
   }
   .location,
   .start-screen .social-list {
     position: static;
     margin: 10px auto;
+  }
+  .footer .container {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
   }
 }
 
