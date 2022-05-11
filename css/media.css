@@ -86,9 +86,11 @@
 }
 
 @media (max-width: 840px) {
-  .social-list,
-  .location {
+  .social-list {
     bottom: 50px;
+  }
+  .location {
+    bottom: 55px;
   }
   .start-screen-content {
     padding: 120px 10px 0;
