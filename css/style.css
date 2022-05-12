@@ -109,6 +109,7 @@ button {
 
 .menu {
   width: 692px;
+  transition: 0.8s all ease;
 }
 
 .menu-list {
@@ -137,21 +138,43 @@ button {
   color: #9a80d9;
 }
 
-.burger-menu {
+.burger-wrapper {
+  display: none;
+  width: 55px;
+  height: 65px;
   position: absolute;
   top: 26px;
   right: 10px;
-  width: 55px;
-  height: 65px;
-  display: none;
-  background-image: url("../img/burger-flower.svg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: contain;
   padding-top: 55px;
   cursor: pointer;
   text-align: center;
   text-transform: uppercase;
+}
+
+.toggler {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  cursor: pointer;
+  width: 55px;
+  height: 65px;
+  opacity: 0;
+}
+
+.burger-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 55px;
+  height: 55px;
+  background-color: #c5c0d9;
+  border-radius: 50%;
+  background-image: url("../img/burger-flower.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+  transition: transform 1s;
 }
 
 .start-screen {

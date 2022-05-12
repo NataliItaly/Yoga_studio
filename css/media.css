@@ -6,10 +6,41 @@
     align-items: flex-start;
   }
   .menu {
-    display: none;
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(170, 136, 202);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-400px);
+    padding-top: 70px;
   }
-  .burger-menu {
+  .menu-list {
+    flex-direction: column;
+  }
+  .menu-item {
+    margin-bottom: 15px;
+  }
+  .menu-link {
+    color: #ffffff;
+  }
+  .burger-wrapper {
     display: block;
+  }
+  /* .toggler:checked + .burger-menu {
+    transform: rotate(135deg);
+  } */
+  .burger-menu.rotate {
+    transform: rotate(180deg);
+  }
+  .open {
+    display: block;
+    transform: translateY(0px);
+    height: 100vh;
   }
   .start-screen-content {
     padding: 160px 10px 0;
