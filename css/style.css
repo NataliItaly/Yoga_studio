@@ -118,6 +118,10 @@ button {
   align-items: center;
 }
 
+.menu-span {
+  transition: 0.4s all ease;
+}
+
 .menu-link {
   font-weight: 600;
   font-size: 16px;
