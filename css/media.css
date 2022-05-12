@@ -242,3 +242,17 @@
     height: auto;
   }
 }
+
+@media (max-width: 360px) {
+  h1 {
+    font-size: 22px;
+  }
+  .subscribe-link {
+    font-size: 13px;
+    height: 40px;
+  }
+  .subscribe-link::before {
+    font-size: 22px;
+    height: 40px;
+  }
+}
