@@ -39,7 +39,7 @@
           </ul>
         </nav>
         <a href="tel:+812345678910" class="tel">8 (123) 456-78-910</a>
-        <div class="burger-menu"></div>
+        <div class="burger-menu">menu</div>
       </div>
     </header>
 
@@ -67,7 +67,12 @@
                 <a href="https://facebook.com/" class="fb" target="_blank"></a>
               </li>
             </ul>
-            <div class="location">Лос-Анджелес</div>
+            <a
+              href="https://www.google.it/maps/place/University+of+Southern+California/@34.0223563,-118.2893442,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2c7e49c71a5ed:0xaa905a5bb427a2c4!8m2!3d34.0223519!4d-118.285117"
+              class="location"
+              target="_blank"
+              >Лос-Анджелес</a
+            >
           </div>
         </div>
       </section>
@@ -87,7 +92,7 @@
                 <p class="content-text">
                   Пн, Ср, Пт – с 10:00 до 12:00 Вт, Чт – с 19:00 до 21:00
                 </p>
-                <a href="" class="content-link describe-text"
+                <a href="#our-team" class="content-link describe-text"
                   >Инструктор Понкратова Анастасия</a
                 >
               </div>
@@ -103,7 +108,7 @@
                 <p class="content-text">
                   Пн, Ср – с 12:00 до 14:00 Чт – с 15:00 до 17:00
                 </p>
-                <a href="" class="content-link describe-text"
+                <a href="#our-team" class="content-link describe-text"
                   >Инструктор Емельянова Полина</a
                 >
               </div>
@@ -119,7 +124,7 @@
                 <p class="content-text">
                   Пн, Ср, Пт – с 09:00 до 10:30 Вт, Чт – с 08:30 до 10:00
                 </p>
-                <a href="" class="content-link describe-text"
+                <a href="#our-team" class="content-link describe-text"
                   >Инструктор Попов Серёжа</a
                 >
               </div>
@@ -135,7 +140,7 @@
                 <p class="content-text">
                   Пт – с 16:00 до 18:00 Вт – с 15:00 до 17:00
                 </p>
-                <a href="" class="content-link describe-text"
+                <a href="#our-team" class="content-link describe-text"
                   >Инструктор Емельянова Полина</a
                 >
               </div>
@@ -420,41 +425,47 @@
               <h2 class="section-title">
                 Запишитесь на бесплатное пробное занятие
               </h2>
-              <input
-                type="text"
-                name=""
-                id=""
-                placeholder="Ваше имя"
-                class="subscribe-input"
-              />
-              <input
-                type="tel"
-                name=""
-                id=""
-                placeholder="Ваш телефон"
-                class="subscribe-input"
-              />
-              <button type="submit" class="subscribe-button">
-                Оставить заявку
-              </button>
+              <form action="" class="subscribe-form">
+                <input
+                  type="text"
+                  name="name"
+                  id="name-placeholder"
+                  placeholder="Ваше имя"
+                  class="subscribe-input"
+                />
+                <input
+                  type="tel"
+                  name="tel"
+                  id="tel-placeholder"
+                  placeholder="Ваш телефон"
+                  class="subscribe-input"
+                />
+                <button type="submit" class="subscribe-button">
+                  Оставить заявку
+                </button>
+              </form>
             </div>
             <div class="contacts-column">
-              <p>
+              <a
+                href="https://www.google.it/maps/place/University+of+Southern+California/@34.0223563,-118.2893442,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2c7e49c71a5ed:0xaa905a5bb427a2c4!8m2!3d34.0223519!4d-118.285117"
+                target="_blank"
+                class="contacts-column-item"
+              >
                 Адрес: <br />
-                Московский проспект, 22
-              </p>
-              <p>
+                Лос-Анджелес, CD234
+              </a>
+              <a href="tel:+812345678910" class="contacts-column-item">
                 Телефон: <br />
-                8 (812) 690-10-10
-              </p>
-              <p>
+                8 (123) 456-78-910
+              </a>
+              <p class="contacts-column-item">
                 График работы: <br />
                 Пн-Вс с 08:00 до 21:00
               </p>
-              <p>
+              <a href="mailto:yogaspb@gmail.com" class="contacts-column-item">
                 Email: <br />
                 yogaspb@gmail.com
-              </p>
+              </a>
               <ul class="social-list social subscribe-social">
                 <li class="social-link">
                   <a href="https://vk.com/" class="vk" target="_blank"></a>
