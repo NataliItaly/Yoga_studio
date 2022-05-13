@@ -865,7 +865,7 @@ section {
 }
 
 .subscribe-input:focus {
-  background-color: #f3c9f35e;
+  background-color: #f5eff55e;
 }
 
 .contacts-column-item:nth-of-type(2n + 1) {

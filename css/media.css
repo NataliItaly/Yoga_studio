@@ -183,8 +183,11 @@
   }
   .feedback-item {
     width: 100%;
-    padding: 30px;
+    padding: 72px 30px 30px;
     height: fit-content;
+  }
+  .quotation-mark {
+    left: 30px;
   }
   .feedback-item figure {
     gap: 20px;
