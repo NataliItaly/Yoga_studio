@@ -185,6 +185,8 @@
     width: 100%;
     padding: 30px;
     height: fit-content;
+  }
+  .feedback-item figure {
     gap: 20px;
   }
 }

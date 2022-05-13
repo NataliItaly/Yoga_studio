@@ -1,3 +1,5 @@
+/*------------menu----------------- */
+
 const burgerWrapper = document.querySelector(".burger-wrapper");
 const burgerMenu = document.querySelector(".burger-menu");
 const menu = document.querySelector(".menu");
@@ -14,3 +16,22 @@ burgerWrapper.addEventListener("click", function () {
     menuSpan.style.color = "#8e80a9";
   }
 });
+
+/*-------------terms of membership------------ */
+
+let termItem = document.querySelectorAll(".term-item");
+let priceText = document.querySelectorAll(".price-text");
+const prices = [
+  [100, 280, 200],
+  [500, 1500, 1000],
+  [1000, 2500, 1800],
+];
+
+for (let i = 0; i < termItem.length; i++) {
+  termItem[i].addEventListener("click", function (event) {
+    event.preventDefault();
+    for (let j = 0; j < priceText.length; j++) {
+      priceText[j].innerHTML = prices[i][j] + " $";
+    }
+  });
+}
