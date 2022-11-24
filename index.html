@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@700&family=Caveat&family=Francois+One&family=Montserrat:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="img/favicon-yoga.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/lotus.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media.css" />
     <title>Yoga Studio</title>
@@ -56,19 +56,27 @@
             <a href="#subscribe" class="subscribe-link"
               >Запишитесь на бесплатное пробное занятие
             </a>
-            <ul class="social-list">
-              <li class="social-link">
-                <a href="https://vk.com/" class="vk" target="_blank"></a>
-              </li>
-              <li class="social-link">
+            <ul class="header-social-list social-list">
+              <li class="social-item">
                 <a
-                  href="https://twitter.com/?lang=en"
-                  class="tw"
+                  href="https://vk.com/"
+                  class="vk social-link"
                   target="_blank"
                 ></a>
               </li>
-              <li class="social-link">
-                <a href="https://facebook.com/" class="fb" target="_blank"></a>
+              <li class="social-item">
+                <a
+                  href="https://twitter.com/?lang=en"
+                  class="tw social-link"
+                  target="_blank"
+                ></a>
+              </li>
+              <li class="social-item">
+                <a
+                  href="https://facebook.com/"
+                  class="fb social-link"
+                  target="_blank"
+                ></a>
               </li>
             </ul>
             <a
@@ -96,8 +104,11 @@
                 <p class="content-text">
                   Пн, Ср, Пт – с 10:00 до 12:00 Вт, Чт – с 19:00 до 21:00
                 </p>
-                <a href="#our-team" class="content-link describe-text"
-                  >Инструктор Понкратова Анастасия</a
+                <a
+                  href="#our-team"
+                  class="content-link describe-text"
+                  data-index="4"
+                  >Инструктор Пaнкратова Анастасия</a
                 >
               </div>
             </li>
@@ -112,7 +123,10 @@
                 <p class="content-text">
                   Пн, Ср – с 12:00 до 14:00 Чт – с 15:00 до 17:00
                 </p>
-                <a href="#our-team" class="content-link describe-text"
+                <a
+                  href="#our-team"
+                  class="content-link describe-text"
+                  data-index="2"
                   >Инструктор Емельянова Полина</a
                 >
               </div>
@@ -128,7 +142,10 @@
                 <p class="content-text">
                   Пн, Ср, Пт – с 09:00 до 10:30 Вт, Чт – с 08:30 до 10:00
                 </p>
-                <a href="#our-team" class="content-link describe-text"
+                <a
+                  href="#our-team"
+                  class="content-link describe-text"
+                  data-index="1"
                   >Инструктор Попов Серёжа</a
                 >
               </div>
@@ -144,8 +161,11 @@
                 <p class="content-text">
                   Пт – с 16:00 до 18:00 Вт – с 15:00 до 17:00
                 </p>
-                <a href="#our-team" class="content-link describe-text"
-                  >Инструктор Емельянова Полина</a
+                <a
+                  href="#our-team"
+                  class="content-link describe-text"
+                  data-index="3"
+                  >Инструктор Джон Хилл</a
                 >
               </div>
             </li>
@@ -195,48 +215,158 @@
         <div class="container container-column">
           <h2 class="section-title">Наша команда</h2>
           <div class="slider-wrapper">
-            <div class="slider-card">
-              <div class="slider-img-wrapper">
-                <img
-                  src="img/our-team/1.our-team.jpg"
-                  alt="Sergey Popov"
-                  class="slider-card-img"
-                />
-              </div>
+            <div class="slider-container">
+              <div class="slider">
+                <div class="slider-card">
+                  <div class="slider-img-wrapper">
+                    <img
+                      src="img/our-team/1.our-team.jpg"
+                      alt="Sergey Popov"
+                      class="slider-card-img"
+                    />
+                  </div>
 
-              <div class="slider-text-column">
-                <h3 class="content-title">Серёжа Попов</h3>
-                <p class="describe-text">Опыт преподавания: 8 лет</p>
-                <div class="content-text">
-                  <p class="teacher-description">
-                    Образование и опыт работы: Практикует с 2011 года, является
-                    сертифицированным инструктором по Кундалини-йоге. Большой
-                    опыт преподавания йоги для начинающих и продолжающих.
-                  </p>
-                  <p class="teacher-description">
-                    Обучался в Индии (International Association of Yoga:
-                    classical yoga, master of principles yoga therapy), Непале
-                    (опыт медитативных и дыхательных техник, проживание в
-                    Ашраме), Нью-Йорк (Аштанга йога центр 108 А. Константинова),
-                    Питтсбург центр классической йоги Виктора Бойко.
-                  </p>
-                  <p class="teacher-description">
-                    Сертифицированный инструктор по фитнесу и йоге (БГУФК), по
-                    массажу (Оздоровительный Витал – центр №401).
-                  </p>
+                  <div class="slider-text-column">
+                    <h3 class="content-title">Серёжа Попов</h3>
+                    <p class="describe-text">Опыт преподавания: 8 лет</p>
+                    <div class="content-text">
+                      <p class="teacher-description">
+                        Образование и опыт работы: Практикует с 2011 года,
+                        является сертифицированным инструктором по
+                        Кундалини-йоге. Большой опыт преподавания йоги для
+                        начинающих и продолжающих.
+                      </p>
+                      <p class="teacher-description">
+                        Обучался в Индии (International Association of Yoga:
+                        classical yoga, master of principles yoga therapy),
+                        Непале (опыт медитативных и дыхательных техник,
+                        проживание в Ашраме), Нью-Йорк (Аштанга йога центр 108
+                        А. Константинова), Питтсбург центр классической йоги
+                        Виктора Бойко.
+                      </p>
+                      <p class="teacher-description">
+                        Сертифицированный инструктор по фитнесу и йоге (БГУФК),
+                        по массажу (Оздоровительный Витал – центр №401).
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-card">
+                  <div class="slider-img-wrapper">
+                    <img
+                      src="img/our-team/2.our-team.jpg"
+                      alt="Yemelyanova Polina"
+                      class="slider-card-img"
+                    />
+                  </div>
+
+                  <div class="slider-text-column">
+                    <h3 class="content-title">Емельянова Полина</h3>
+                    <p class="describe-text">Опыт преподавания: 12 лет</p>
+                    <div class="content-text">
+                      <p class="teacher-description">
+                        Образование и опыт работы: Практикует с 2010 года,
+                        является сертифицированным инструктором по
+                        Кундалини-йоге. Большой опыт преподавания йоги для
+                        начинающих и продолжающих.
+                      </p>
+                      <p class="teacher-description">
+                        Обучался в Индии (International Association of Yoga:
+                        classical yoga, master of principles yoga therapy),
+                        Непале (опыт медитативных и дыхательных техник,
+                        проживание в Ашраме), Нью-Йорк (Аштанга йога центр 108
+                        А. Константинова), Питтсбург центр классической йоги
+                        Виктора Бойко.
+                      </p>
+                      <p class="teacher-description">
+                        Сертифицированный инструктор по фитнесу и йоге (БГУФК),
+                        по массажу (Оздоровительный Витал – центр №401).
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="slider-card">
+                  <div class="slider-img-wrapper">
+                    <img
+                      src="img/our-team/3.our-team.jpg"
+                      alt="John Hill"
+                      class="slider-card-img"
+                    />
+                  </div>
+
+                  <div class="slider-text-column">
+                    <h3 class="content-title">Джон Хилл</h3>
+                    <p class="describe-text">Опыт преподавания: 16 лет</p>
+                    <div class="content-text">
+                      <p class="teacher-description">
+                        Образование и опыт работы: Практикует с 2006 года,
+                        является сертифицированным инструктором по
+                        Кундалини-йоге. Большой опыт преподавания йоги для
+                        начинающих и продолжающих.
+                      </p>
+                      <p class="teacher-description">
+                        Обучался в Индии (International Association of Yoga:
+                        classical yoga, master of principles yoga therapy),
+                        Непале (опыт медитативных и дыхательных техник,
+                        проживание в Ашраме), Нью-Йорк (Аштанга йога центр 108
+                        А. Константинова), Питтсбург центр классической йоги
+                        Виктора Бойко.
+                      </p>
+                      <p class="teacher-description">
+                        Сертифицированный инструктор по фитнесу и йоге (БГУФК),
+                        по массажу (Оздоровительный Витал – центр №401).
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="slider-card">
+                  <div class="slider-img-wrapper">
+                    <img
+                      src="img/our-team/4.our-team.jpg"
+                      alt="Pankratova Anastasia"
+                      class="slider-card-img"
+                    />
+                  </div>
+                  <div class="slider-text-column">
+                    <h3 class="content-title">Пaнкратова Анастасия</h3>
+                    <p class="describe-text">Опыт преподавания: 6 лет</p>
+                    <div class="content-text">
+                      <p class="teacher-description">
+                        Образование и опыт работы: Практикует с 2016 года,
+                        является сертифицированным инструктором по
+                        Кундалини-йоге. Большой опыт преподавания йоги для
+                        начинающих и продолжающих.
+                      </p>
+                      <p class="teacher-description">
+                        Обучался в Индии (International Association of Yoga:
+                        classical yoga, master of principles yoga therapy),
+                        Непале (опыт медитативных и дыхательных техник,
+                        проживание в Ашраме), Нью-Йорк (Аштанга йога центр 108
+                        А. Константинова), Питтсбург центр классической йоги
+                        Виктора Бойко.
+                      </p>
+                      <p class="teacher-description">
+                        Сертифицированный инструктор по фитнесу и йоге (БГУФК),
+                        по массажу (Оздоровительный Витал – центр №401).
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+
             <div class="slider-button-wrapper">
               <button class="prev">&lt;</button>
               <div class="slider-pagination">
-                <span class="current-card">1</span> /
-                <span class="total-cards">3</span>
+                <span class="current-card"></span> /
+                <span class="total-cards"></span>
               </div>
               <button class="next">&gt;</button>
             </div>
             <ul class="slider-preview-wrapper">
-              <li class="preview-item">
+              <li class="preview-item active-preview">
                 <img
                   src="img/our-team/1.our-team-min.jpg"
                   alt=""
@@ -253,6 +383,13 @@
               <li class="preview-item">
                 <img
                   src="img/our-team/3.our-team-min.jpg"
+                  alt=""
+                  class="preview-img"
+                />
+              </li>
+              <li class="preview-item">
+                <img
+                  src="img/our-team/4.our-team-min.jpg"
                   alt=""
                   class="preview-img"
                 />
@@ -358,73 +495,197 @@
       <section class="feedback" id="feedback">
         <div class="container container-column">
           <h2 class="section-title">Отзывы</h2>
-          <ul class="feedback-list">
-            <li class="feedback-item">
-              <p class="quotation-mark"></p>
-              <figure>
-                <blockquote class="content-text">
-                  Хожу на йогу вечером, чтобы расслабиться после тяжелого
-                  трудового дня. И после занятий наступает спокойствие! Йога это
-                  отличный способ быстро и качественно расслабиться. Спасибо
-                  инструктору Серёже.
-                </blockquote>
-                <div class="feedback-author">
-                  <img
-                    src="img/feedback/feedback-img-1.jpg"
-                    alt=""
-                    class="feedback-img"
-                  />
-                  <div class="feedback-data">
-                    <p class="author-name describe-text">Алекс Войтенко</p>
-                    <p class="date">7 марта 2020</p>
-                    <ul class="social-list social">
-                      <li class="social-item">
-                        <a href="" class="social-link vk"></a>
-                      </li>
-                      <li class="social-item">
-                        <a href="" class="social-link tw"></a>
-                      </li>
-                    </ul>
+          <div class="feedback-wrapper">
+            <ul class="feedback-list">
+              <li class="feedback-item">
+                <p class="quotation-mark"></p>
+                <figure>
+                  <blockquote class="content-text">
+                    Хожу на йогу вечером, чтобы расслабиться после тяжелого
+                    трудового дня. И после занятий наступает спокойствие! Йога
+                    это отличный способ быстро и качественно расслабиться.
+                    Спасибо инструктору Серёже.
+                  </blockquote>
+                  <div class="feedback-author">
+                    <img
+                      src="img/feedback/feedback-img-1.jpg"
+                      alt=""
+                      class="feedback-img"
+                    />
+                    <div class="feedback-data">
+                      <p class="author-name describe-text">Алекс Войтенко</p>
+                      <p class="date">7 марта 2020</p>
+                      <ul class="feedback-social-list social-list social">
+                        <li class="social-item">
+                          <a href="" class="social-link vk"></a>
+                        </li>
+                        <li class="social-item">
+                          <a href="" class="social-link tw"></a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
-              </figure>
-            </li>
+                </figure>
+              </li>
 
-            <li class="feedback-item">
-              <p class="quotation-mark"></p>
-              <figure>
-                <blockquote class="content-text">
-                  Наверное, каждому человеку хочется стать лучше и совершеннее.
-                  Но при этом многие подразумевают исключительно физическое
-                  здоровье и внешний вид. О духовной составляющей задумываются
-                  не так часто. Вот именно йога - это комплекс занятий. Всем
-                  рекомендую!
-                </blockquote>
-                <div class="feedback-author">
-                  <img
-                    src="img/feedback/feedback-img-2.jpg"
-                    alt=""
-                    class="feedback-img"
-                  />
-                  <div class="feedback-data">
-                    <p class="author-name describe-text">Злата Хитрова</p>
-                    <p class="date">3 марта 2020</p>
-                    <ul class="social-list social">
-                      <li class="social-item">
-                        <a href="" class="social-link vk"></a>
-                      </li>
-                      <li class="social-item">
-                        <a href="" class="social-link tw"></a>
-                      </li>
-                    </ul>
+              <li class="feedback-item">
+                <p class="quotation-mark"></p>
+                <figure>
+                  <blockquote class="content-text">
+                    Наверное, каждому человеку хочется стать лучше и
+                    совершеннее. Но при этом многие подразумевают исключительно
+                    физическое здоровье и внешний вид. О духовной составляющей
+                    задумываются не так часто. Вот именно йога - это комплекс
+                    занятий. Всем рекомендую!
+                  </blockquote>
+                  <div class="feedback-author">
+                    <img
+                      src="img/feedback/feedback-img-2.jpg"
+                      alt=""
+                      class="feedback-img"
+                    />
+                    <div class="feedback-data">
+                      <p class="author-name describe-text">Злата Хитрова</p>
+                      <p class="date">3 марта 2020</p>
+                      <ul class="feedback-social-list social-list social">
+                        <li class="social-item">
+                          <a href="" class="social-link vk"></a>
+                        </li>
+                        <li class="social-item">
+                          <a href="" class="social-link tw"></a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
-              </figure>
-            </li>
-          </ul>
+                </figure>
+              </li>
+
+              <li class="feedback-item">
+                <p class="quotation-mark"></p>
+                <figure>
+                  <blockquote class="content-text">
+                    Хожу на йогу вечером, чтобы расслабиться после тяжелого
+                    трудового дня. И после занятий наступает спокойствие! Йога
+                    это отличный способ быстро и качественно расслабиться.
+                    Спасибо инструктору Серёже.
+                  </blockquote>
+                  <div class="feedback-author">
+                    <img
+                      src="img/feedback/feedback-img-3.jpg"
+                      alt=""
+                      class="feedback-img"
+                    />
+                    <div class="feedback-data">
+                      <p class="author-name describe-text">Григорий Мельник</p>
+                      <p class="date">7 марта 2020</p>
+                      <ul class="feedback-social-list social-list social">
+                        <li class="social-item">
+                          <a href="" class="social-link vk"></a>
+                        </li>
+                        <li class="social-item">
+                          <a href="" class="social-link tw"></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </figure>
+              </li>
+
+              <li class="feedback-item">
+                <p class="quotation-mark"></p>
+                <figure>
+                  <blockquote class="content-text">
+                    Всем рекомендую пользоваться услугами данного специалиста!
+                  </blockquote>
+                  <div class="feedback-author">
+                    <img
+                      src="img/feedback/feedback-img-4.jpg"
+                      alt=""
+                      class="feedback-img"
+                    />
+                    <div class="feedback-data">
+                      <p class="author-name describe-text">Анна Хмельницкая</p>
+                      <p class="date">7 марта 2020</p>
+                      <ul class="feedback-social-list social-list social">
+                        <li class="social-item">
+                          <a href="" class="social-link vk"></a>
+                        </li>
+                        <li class="social-item">
+                          <a href="" class="social-link tw"></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </figure>
+              </li>
+
+              <li class="feedback-item">
+                <p class="quotation-mark"></p>
+                <figure>
+                  <blockquote class="content-text">
+                    Хожу на йогу вечером, чтобы расслабиться после тяжелого
+                    трудового дня. И после занятий наступает спокойствие! Йога
+                    это отличный способ быстро и качественно расслабиться.
+                    Спасибо инструктору Серёже.
+                  </blockquote>
+                  <div class="feedback-author">
+                    <img
+                      src="img/feedback/feedback-img-5.jpg"
+                      alt=""
+                      class="feedback-img"
+                    />
+                    <div class="feedback-data">
+                      <p class="author-name describe-text">Евгений Мазур</p>
+                      <p class="date">7 марта 2020</p>
+                      <ul class="feedback-social-list social-list social">
+                        <li class="social-item">
+                          <a href="" class="social-link vk"></a>
+                        </li>
+                        <li class="social-item">
+                          <a href="" class="social-link tw"></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </figure>
+              </li>
+
+              <li class="feedback-item">
+                <p class="quotation-mark"></p>
+                <figure>
+                  <blockquote class="content-text">
+                    Наверное, каждому человеку хочется стать лучше и
+                    совершеннее. Но при этом многие подразумевают исключительно
+                    физическое здоровье и внешний вид. О духовной составляющей
+                    задумываются не так часто. Вот именно йога - это комплекс
+                    занятий. Всем рекомендую!
+                  </blockquote>
+                  <div class="feedback-author">
+                    <img
+                      src="img/feedback/feedback-img-6.jpg"
+                      alt=""
+                      class="feedback-img"
+                    />
+                    <div class="feedback-data">
+                      <p class="author-name describe-text">Светлана Иванова</p>
+                      <p class="date">3 марта 2020</p>
+                      <ul class="feedback-social-list social-list social">
+                        <li class="social-item">
+                          <a href="" class="social-link vk"></a>
+                        </li>
+                        <li class="social-item">
+                          <a href="" class="social-link tw"></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </figure>
+              </li>
+            </ul>
+          </div>
           <div class="slider-button-wrapper">
-            <button class="prev">&lt;</button>
-            <button class="next">&gt;</button>
+            <button class="feedback-prev prev">&lt;</button>
+            <button class="feedback-next next">&gt;</button>
           </div>
         </div>
       </section>
@@ -477,21 +738,25 @@
                 Email: <br />
                 yogaspb@gmail.com
               </a>
-              <ul class="social-list social subscribe-social">
-                <li class="social-link">
-                  <a href="https://vk.com/" class="vk" target="_blank"></a>
-                </li>
-                <li class="social-link">
+              <ul class="footer-social-list social-list subscribe-social">
+                <li class="social-item">
                   <a
-                    href="https://twitter.com/?lang=en"
-                    class="tw"
+                    href="https://vk.com/"
+                    class="vk social-link"
                     target="_blank"
                   ></a>
                 </li>
-                <li class="social-link">
+                <li class="social-item">
+                  <a
+                    href="https://twitter.com/?lang=en"
+                    class="tw social-link"
+                    target="_blank"
+                  ></a>
+                </li>
+                <li class="social-item">
                   <a
                     href="https://facebook.com/"
-                    class="fb"
+                    class="fb social-link"
                     target="_blank"
                   ></a>
                 </li>
