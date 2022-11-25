@@ -60,8 +60,16 @@
 }
 
 @media (max-width: 1040px) {
+  .slider-container {
+    width: 420px;
+  }
+  .slider {
+    height: 670px;
+  }
   .slider-card {
     flex-direction: column;
+    width: 420px;
+    height: 670px;
   }
   .slider-img-wrapper {
     width: 100%;
@@ -69,8 +77,18 @@
     background-color: #ffffff;
     padding-top: 15px;
   }
+  .our-team .describe-text {
+    top: 20px;
+  }
+  .teacher-description {
+    margin-top: 10px;
+  }
   .slider-card-img {
     width: auto;
+  }
+  .slider-text-column {
+    width: 100%;
+    padding: 20px;
   }
   .our-team::after {
     display: none;
@@ -82,6 +100,13 @@
     height: 740px;
     width: 630px;
     padding-right: 0;
+  }
+}
+
+@media (max-width: 994px) {
+  .feedback-wrapper {
+    width: 472px;
+    padding: 10px;
   }
 }
 
@@ -126,10 +151,6 @@
 }
 
 @media (max-width: 740px) {
-  .slider-card {
-    width: 90%;
-    margin: 0 auto 30px;
-  }
   .slider-text-column {
     width: 100%;
     padding: 30px;
@@ -161,9 +182,31 @@
   }
 }
 
+@media (max-width: 492px) {
+  .feedback .container {
+    padding: 0;
+  }
+  .feedback-wrapper {
+    width: 320px;
+  }
+  .feedback-list {
+    transform: translateX(5px);
+  }
+  .feedback-item {
+    width: 300px;
+    padding: 72px 20px 30px;
+  }
+}
+
 @media (max-width: 478px) {
   .slider-preview-wrapper {
-    display: none;
+    gap: 10px;
+  }
+  .preview-item {
+    height: fit-content;
+  }
+  .preview-img {
+    height: auto;
   }
   .our-team .describe-text {
     position: static;
@@ -178,14 +221,7 @@
   .contacts-column {
     width: 95%;
   }
-  .feedback-list {
-    width: 95%;
-  }
-  .feedback-item {
-    width: 100%;
-    padding: 72px 30px 30px;
-    height: fit-content;
-  }
+
   .quotation-mark {
     left: 30px;
   }
@@ -195,8 +231,17 @@
 }
 
 @media (max-width: 440px) {
+  .slider {
+    height: 735px;
+  }
   .start-screen-content {
     padding: 90px 0 0;
+  }
+  .slider-container {
+    width: 100%;
+  }
+  .slider-card {
+    width: 100%;
   }
 }
 

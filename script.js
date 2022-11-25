@@ -172,7 +172,11 @@ const feedbackList = document.querySelector(".feedback-list");
 const feedbackItems = document.querySelectorAll(".feedback-item");
 const prevFeedbackBtn = document.querySelector(".feedback-prev");
 const nextFeedbackBtn = document.querySelector(".feedback-next");
-let translateStep = 472;
+let translateStep = function () {
+  let itemWidth = parseInt(getComputedStyle(feedbackItems[0]).width);
+  let listGap = parseInt(getComputedStyle(feedbackList).gap);
+  return itemWidth + listGap;
+}; //472;
 let currentPosition = 0;
 
 const calcLastDistance = function () {
@@ -186,7 +190,7 @@ nextFeedbackBtn.addEventListener("click", function () {
   if (Math.abs(currentPosition) + 1 >= calcLastDistance()) {
     currentPosition = 0;
   } else {
-    currentPosition -= translateStep;
+    currentPosition -= translateStep();
   }
   feedbackList.style.transform = `translateX(${currentPosition}px)`;
 });
@@ -195,7 +199,7 @@ prevFeedbackBtn.addEventListener("click", function () {
   if (currentPosition === 0 || currentPosition === 1) {
     currentPosition = -calcLastDistance();
   } else {
-    currentPosition += translateStep;
+    currentPosition += translateStep();
   }
   feedbackList.style.transform = `translateX(${currentPosition}px)`;
 });
