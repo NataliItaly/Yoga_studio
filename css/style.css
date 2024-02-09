@@ -90,7 +90,7 @@ button {
   left: 0;
   right: 0;
   top: 0;
-  z-index: 2;
+  z-index: 5;
 }
 
 .logo {
@@ -123,18 +123,18 @@ button {
 }
 
 .menu-link {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #6e5899;
-  text-shadow: 0px 0px 20px #ece7ec;
+  color: #fff;
+  text-shadow: #000 1px 0 40px;
 }
 
 .tel {
   font-weight: 400;
   font-size: 16px;
   font-size: calc(12px + 2 * (100vw / 1180));
-  color: #6e5899;
+  color: #fff;
 }
 
 .faded {
@@ -181,14 +181,43 @@ button {
 }
 
 .start-screen {
+  max-height: 100%;
   background-image: url("../img/header-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: bottom;
+  padding-top: 160px;
 }
 
-.start-screen-content {
-  padding: 160px 0 100px 160px;
+.start-screen-top {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    180deg,
+    rgba(66, 10, 106, 0.8),
+    rgba(255, 255, 255, 0.4) 70%,
+    rgba(255, 255, 255, 0.7) 90%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.start-screen-video {
+  width: 100%;
+  max-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.start-screen-title {
+  color: #fff;
+  text-shadow: rgb(66, 10, 106) 1px 0 40px;
 }
 
 .container-column {
@@ -197,6 +226,8 @@ button {
 }
 
 .container-center {
+  position: relative;
+  z-index: 5;
   display: flex;
   justify-content: center;
 }
@@ -270,6 +301,7 @@ button {
 }
 
 .location {
+  color: #420a6a;
   position: absolute;
   right: 10px;
   bottom: 110px;
@@ -308,11 +340,6 @@ button {
   background-repeat: no-repeat;
   background-size: contain;
   background-position-y: center;
-}
-
-.menu-link:hover,
-.tel:hover {
-  color: #634e8d;
 }
 
 .social-link:hover {
