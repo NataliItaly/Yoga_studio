@@ -18,7 +18,7 @@ burgerWrapper.addEventListener("click", function () {
     menuSpan.style.color = "#ffffff";
   } else {
     menuSpan.innerHTML = "menu";
-    menuSpan.style.color = "#8e80a9";
+    //menuSpan.style.color = "#8e80a9";
   }
 });
 
