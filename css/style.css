@@ -1,5 +1,11 @@
+:root {
+  --main-color: #4b298d;
+  --secondary-color: #dd365c;
+}
+
 html {
   scroll-behavior: smooth;
+  color: var(--secondary-color);
 }
 
 *,
@@ -34,7 +40,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
-  color: #6e5899;
+  color: var(--main-color);
 }
 
 body {
@@ -82,6 +88,10 @@ button {
   align-items: center;
   height: 100%;
   padding: 0 10px;
+}
+
+.container-index {
+  z-index: 5;
 }
 
 .header {
@@ -251,18 +261,17 @@ button {
   margin: 30px auto 130px;
   padding-left: 63px;
   font-weight: 600;
-  font-size: 14px;
+
   line-height: 20px;
-  color: #e65c7b;
-  color: #dd365c;
+  color: var(--secondary-color);
   cursor: pointer;
   position: relative;
   transition: 0.6s all ease;
 }
 
 .subscribe-link:hover {
-  /* background-color: #e65c7b; */
-  background-color: #dd365c;
+  /* background-color: var(--secondary-color); */
+  background-color: var(--secondary-color);
   color: #ffffff;
   padding-left: 10px;
   padding-right: 63px;
@@ -278,7 +287,7 @@ button {
   align-items: center;
   width: 56px;
   height: 48px;
-  background: #dd365c;
+  background: var(--secondary-color);
   color: #ffffff;
   font-size: 24px;
 }
@@ -395,7 +404,7 @@ section {
 }
 
 .direction-item:hover .content-link {
-  background-color: #6e5899;
+  background-color: var(--main-color);
   color: #ffffff;
 }
 
@@ -447,9 +456,8 @@ section {
 }
 
 .describe-text {
-  font-size: 12px;
   line-height: 15px;
-  color: #e65c7b;
+  color: var(--secondary-color);
 }
 
 .content-link::after {
@@ -459,7 +467,7 @@ section {
   align-items: center;
   width: 45px;
   height: 30px;
-  background-color: #6e5899;
+  background-color: var(--main-color);
   color: #ffffff;
   font-size: 20px;
   position: absolute;
@@ -471,8 +479,25 @@ section {
   background-image: url("../img/membership-bg.png");
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 0;
   background-size: cover;
+  position: relative;
+}
+
+.membership-screen-top {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 50px,
+    rgba(255, 255, 255, 0.4) 70%,
+    rgba(255, 255, 255, 0.7) 90%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
 .membership-term-list {
@@ -484,9 +509,8 @@ section {
 }
 
 .term-link {
-  font-size: 12px;
   line-height: 20px;
-  color: #e65c7b;
+  color: var(--secondary-color);
 }
 
 .term-link.active {
@@ -537,7 +561,7 @@ section {
   font-weight: 700;
   font-size: 30px;
   text-align: center;
-  color: #8e80a9;
+  color: var(--main-color);
 }
 
 .type-item.big .price-text {
@@ -547,7 +571,7 @@ section {
 .order-button {
   width: 223px;
   height: 52px;
-  background: #8e80a9;
+  background: var(--main-color);
   border-radius: 20px;
   font-size: 12px;
   line-height: 20px;
@@ -589,8 +613,8 @@ section {
 
 .type-item:hover .order-button {
   background-color: #ffffff;
-  color: #6e5899;
-  border: 1px solid #6e5899;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
 }
 
 .slider-wrapper {
@@ -681,14 +705,14 @@ section {
   width: 45px;
   height: 30px;
   border: 1px solid #8e80a9;
-  color: #6e5899;
+  color: var(--main-color);
   cursor: pointer;
   transition: 0.6s all ease;
 }
 
 .prev:hover,
 .next:hover {
-  background-color: #6e5899;
+  background-color: var(--main-color);
   color: #ffffff;
 }
 
@@ -898,9 +922,10 @@ section {
 .subscribe-button {
   width: 100%;
   height: 56px;
-  background: #e65c7b;
-  border: 1px solid #e65c7b;
+  background: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
   color: #ffffff;
+
   border-radius: 22px;
   position: relative;
   transition: background-color 0.6s;
@@ -909,7 +934,7 @@ section {
 
 .subscribe-button:hover {
   background-color: #ffffff;
-  color: #e65c7b;
+  color: var(--secondary-color);
 }
 
 .subscribe-button:after {
@@ -941,7 +966,7 @@ section {
   width: 100%;
   padding: 6px;
   background-color: transparent;
-  border-bottom: 1px solid #6e5899;
+  border-bottom: 1px solid var(--main-color);
 }
 
 .subscribe-input:focus {
@@ -971,7 +996,7 @@ section {
 
 .footer {
   height: 124px;
-  background-color: #6e5899;
+  background-color: var(--main-color);
 }
 
 .footer .container {
