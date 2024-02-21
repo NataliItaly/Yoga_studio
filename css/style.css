@@ -199,7 +199,7 @@ button {
   height: 100vh;
   background: linear-gradient(
     180deg,
-    rgba(66, 10, 106, 0.8),
+    rgba(66, 10, 106, 0.8) 120px,
     rgba(255, 255, 255, 0.4) 70%,
     rgba(255, 255, 255, 0.7) 90%,
     rgba(255, 255, 255, 1) 100%
